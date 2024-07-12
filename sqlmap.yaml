@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqlmap
+  labels:
+    app: sqlmap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqlmap
+  template:
+    metadata:
+      labels:
+        app: sqlmap
+    spec:
+      containers:
+      - name: sqlmap
+        image: ighar/sqlmap:1.0
+        ports:
+        - containerPort: 8000
+        imagePullPolicy: Always

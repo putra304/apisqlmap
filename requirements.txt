@@ -1,0 +1,5 @@
+Flask
+Requests
+Urllib3
+Colorama
+BeautifulSoup4
