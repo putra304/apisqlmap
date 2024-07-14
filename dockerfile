@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.6
 
 # Set environment variables to avoid SSL verification issues
 ENV PIP_TRUSTED_HOST pypi.python.org
